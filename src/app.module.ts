@@ -16,7 +16,7 @@ import { CompanyModule } from './company/company.module';
 @Module({
   imports: [
     ConfigModule.forRoot({ envFilePath: '.env' }),
-    ServeStaticModule.forRoot({ rootPath: path.resolve(__dirname, '..', 'out') }),
+    // ServeStaticModule.forRoot({ rootPath: path.resolve(__dirname, '..', 'out') }),
     // RenderModule.forRootAsync(Next({dev: true})),
     MongooseModule.forRoot(process.env.NEWMONGODBPROD),
     UserModule,
